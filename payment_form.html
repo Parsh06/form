@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+    <link rel="stylesheet" href="style/style.css">
+  <style>
+       .background{
+        background-color: aquamarine;
+        background-image: url(./pic.jpeg);
+        background-repeat:no-repeat;
+        background-size: 3200px;
+        background-position:center;
+       }
+       div{
+        size: 20px;
+        border: 10px black solid;
+        margin: 10px;
+       }
+  </style>  
+</head>
+<fieldset>
+<body>
+    <div class="background">
+    <form action="">
+        <div>
+        <h1 style="text-align:center ;"> Payment Form </h1>
+<h2 style="color:rgb(12, 8, 9)">Informations </h2>
+<h5 style="color:crimson ;"> Required to be filled *</h5>
+<p> First Name: * <input type="text" name="name" id="name" required> </p>
+<p> Last Name: * <input type="text" name="name" id="name" required > </p>
+<p> <h3 style="color:brown ;"><b> Gender *</h3></b></p>
+<p> Male <input type="radio" name="gender" id="male" required>
+<br>
+    Female <input type="radio" name="gender" id="female" required>
+    <br>
+    other <input type="radio" name="gender" id="other" required>
+</p>
+<p>Address :  *<textarea name="address" id="address" cols="50" rows="9" required></textarea></p>
+<p> Email :  *<input type="email" name="email" id="email" required></p> 
+<p> Pincode:  *<input type="number" id="number" required> </p>
+<h2> Payment Mode</h2>
+<p>Card Type : *
+<select name="card type" id="card type">
+<option value="">--select card type-- required</option>
+<option value="canara">Canara</option>
+<option value="HDFC">HDFC</option>
+<option value="punjab">Punjab</option>
+</select>
+</p>
+</div>
+<p>Card Number : *<input type="number" name="card number" id="card number" required></p>
+<p> Card Expiery *<input type="date" name="date" id="date" required></p>
+<p> CVV : *<input type="password" required></p>
+<h1 style="text-align:center ;"><input type="submit" value="Pay Now" required></h1>
+<h1 style="text-align:center ;"><input type="submit" value="Reset" required></h1>
+</form>
+</div>
+</body>
+</fieldset>
+</html>
